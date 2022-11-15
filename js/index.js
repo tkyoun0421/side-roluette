@@ -17,10 +17,10 @@ clickBtn.addEventListener("click", function() {
     clickBtn.innerHTML = "START";
   } else {
     roluette.style.transition = `all 4s`;
-    const TEN_LABS = 360;
+    const FIVE_LABS = 1800;
     const random = Math.floor(Math.random() * product.length);
     const arc = 360 / product.length;
-    const rotate = (random * arc) + TEN_LABS;
+    const rotate = (random * arc) + FIVE_LABS;
 
     roluette.style.transform = `rotate(-${rotate}deg)`;  
     clickBtn.style.pointerEvents = "none";  
